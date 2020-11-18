@@ -2,7 +2,8 @@
 % Please edit documentation in R/ggboxplot.R
 \name{ggboxplot}
 \alias{ggboxplot}
-\title{Title}
+\title{ggboxplot
+Produce a boxplot that describe the distribution of a numeric variable}
 \usage{
 ggboxplot(
   data,
@@ -27,5 +28,6 @@ ggboxplot(
 ggboxplot returns an object of class ggplot.
 }
 \description{
-Title
+ggboxplot
+Produce a boxplot that describe the distribution of a numeric variable
 }
