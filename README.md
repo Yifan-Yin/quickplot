@@ -79,8 +79,8 @@ ggboxplot(gapminder, categorical_variable = 'continent', numeric_variable = 'lif
 
 7.  **use\_mit\_license()**
 
-> I called `use_mit_license('Yifan Yin')` to add license information to
-> the package.
+> I called `use_mit_license('Yifan Yin')` to add a MIT license to the
+> package.
 
 8.  **roxygen2**
 
@@ -99,7 +99,11 @@ ggboxplot(gapminder, categorical_variable = 'continent', numeric_variable = 'lif
 > to test the package. Then I called `use_test('ggboxplot')` to test the
 > specific function, and run `test()` to see the result.
 
-11. **use\_vignette()** **use\_readme\_rmd()** and *build\_readme()*
+11. **use\_vignette()**
+
+> I called `use_vignette('vignette')` to create a vignette folder.
+
+12. **use\_readme\_rmd()** and *build\_readme()*
 
 > I called `use_readme_rmd()` to create a README.Rmd file, and called
 > `build_readme()` to create a README.md file
