@@ -29,8 +29,8 @@ ggboxplot <- function(data, categorical_variable, numeric_variable, xlab = categ
       y <- dplyr::sym(numeric_variable)
 
       # make a boxplot
-      plot <- data %>%
-        ggplot2::ggplot(ggplot2::aes(y = {{ y }}, x = {{ x }})) +
+
+      plot <- ggplot2::ggplot(data, ggplot2::aes(y = {{ y }}, x = {{ x }})) +
         ggplot2::geom_boxplot() +
         ggplot2::xlab(xlab) +
         ggplot2::ylab(ylab)
