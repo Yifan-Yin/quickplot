@@ -1,4 +1,4 @@
-#' Title
+#' ggboxplot
 #'
 #' @param data a data frame or a tibble from which the input variables are taken
 #' @param categorical_variable a string that contains the name of a categorical variable of interest that is used for the boxplot and is mapped to the x axis
