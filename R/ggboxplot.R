@@ -1,4 +1,5 @@
 #' ggboxplot
+#'
 #' Produce a boxplot that describe the distribution of a numeric variable
 #'
 #' @param data a data frame or a tibble from which the input variables are taken
