@@ -16,3 +16,5 @@ Imports:
     ggplot2,
     purrr,
     dplyr
+Suggests: 
+    testthat

@@ -43,3 +43,53 @@ library(gapminder)
 ggboxplot(gapminder, categorical_variable = 'continent', numeric_variable = 'lifeExp')
 ```
 
+## The Procedure of How to Make This Package
+
+1. **create_package()**
+
+  >The first step is that I called `create_package('H:/quickplot')` in the console to create a package in the specific directory.
+
+2. **use_github()**
+
+  >I called `use_git()` in the console to use the vision control system.
+
+3. **use_r()**
+
+  >I called `use_r('ggboxplot')` in the console which creates a new R file.
+
+  >In the *ggboxplot.r* file, I created a function `ggboxplot()`, which can produce a boxplot using `ggplot()` and `geom_boxplot()`.
+
+4. **use_package()**
+
+  >Because I used functions that are from other packages, I called `use_package('ggplot2')`, `use_package('purrr')`, and `use_package('dplyr')` to import the functions from these packages.
+
+5. **load_all()**
+
+  >Then I called `load_all()` in the console, and tested whether the `ggboxplot()` worked correctly.
+
+6. **Edit DESCRIPTION**
+
+  >I opened the DESCRIPTION file in *R Studio*, and edited the content. I added my personal information to the *author*, and also added information about the *title* and the *description*.
+
+7. **use_mit_license()**
+
+  >I called `use_mit_license('Yifan Yin')` to add license information to the package.
+
+8. **roxygen2**
+
+  >I called `library(roxygen2)` in the console, and inserted *roxygen skeleton* to the code. Then I edited the definition of the function `ggboxplot()`.
+
+9. **document()**
+
+  >I called `document()` in the console to make the documentation of the function.
+
+10. **use_testthat()**
+
+  >I called `use_testthat()` in the console to make a *testthat.r* file to test the package. Then I called `use_test('ggboxplot')` to test the specific function, and run `test()` to see the result.
+
+11. **use_vignette()**
+**use_readme_rmd()** and *build_readme()*
+  
+  >I called `use_readme_rmd()` to create a README.Rmd file, and called `build_readme()` to create a README.md file
+
+
