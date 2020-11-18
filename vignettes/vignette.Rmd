@@ -1,0 +1,33 @@
+---
+title: "vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(quickplot)
+```
+
+Here is an example of how quickplot works
+
+In general, we need to use the `ggplot()` and other layers to make a plot we want
+```{r}
+ggplot2::ggplot(gapminder::gapminder, ggplot2::aes(x = continent, y = lifeExp)) +
+        ggplot2::geom_boxplot()
+```
+
+In contrast, using `ggboxplot()` function can make a ggplot more convinently by using a single function.
+```{r}
+ggboxplot(gapminder::gapminder, categorical_variable = 'continent', numeric_variable = 'lifeExp')
+```
+
