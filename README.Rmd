@@ -1,0 +1,45 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# quickplot
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The purpose of quickplot is to produce `ggplot` in a more convenient way. It can make a beautiful ggplot using a single function.
+
+## Installation
+
+You can install the released version of quickplot from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("quickplot")
+```
+
+And the development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("Yifan-Yin/quickplot")
+```
+## Basic Usage
+Make a boxplot to visualize the distribution of life Expectancy in different different continents by using the `ggboxplot()` function. 
+```{r example}
+library(quickplot)
+library(gapminder)
+## use ggboxplot to make a boxplot
+ggboxplot(gapminder, categorical_variable = 'continent', numeric_variable = 'lifeExp')
+```
+
