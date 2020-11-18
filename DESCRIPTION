@@ -1,0 +1,18 @@
+Package: quickplot
+Title: Title
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Yifan",
+           family = "Yin",
+           role = c("aut", "cre"),
+           email = "steven.yyf7@hotmail.com")
+Description: This packge contains functions that can be used to produce ggplots easily.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports: 
+    ggplot2,
+    purrr,
+    dplyr
