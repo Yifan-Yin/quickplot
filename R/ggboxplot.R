@@ -9,7 +9,9 @@
 #' @return
 #' ggboxplot returns an object of class ggplot.
 #' @export
-#'
+#' @example
+#' data <- data.frame(tree = c('cedar', 'maple'), dbh = 1:2)
+#' ggboxplot(data, 'tree', 'dbh')
 
 ggboxplot <- function(data, categorical_variable, numeric_variable, xlab = categorical_variable, ylab = numeric_variable){
   if (!all(class(data) %in% c('tbl', 'data.frame', 'tbl_df'))){
